@@ -11,7 +11,7 @@ public class Projectile extends Parent{
 	private boolean auto;
 	private double projectileSpeed;
 	protected final double projectileTravelLength = -100.0;
-	private final double slow = 500.0, medium = 1000.0, fast = 2000.0;
+	private final double slow = 2000.0, medium = 1000.0, fast = 500.0;
 
 	protected Projectile(MouseEvent mouse) {
 		switch (this.upgrade) {
