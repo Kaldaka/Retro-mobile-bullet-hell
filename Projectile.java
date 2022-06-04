@@ -10,7 +10,7 @@ public class Projectile extends Parent{
 	private Upgrade upgrade = Upgrade.NONE;
 	private boolean auto;
 	private double projectileSpeed;
-	protected final double projectileTravelLength = -100.0;
+	protected final double projectileTravelLength = -1000.0;
 	private final double slow = 2000.0, medium = 1000.0, fast = 500.0;
 
 	protected Projectile(MouseEvent mouse) {
@@ -36,6 +36,10 @@ public class Projectile extends Parent{
 			getChildren().add(b2);
 			break;
 		}
+	}
+	
+	protected Projectile() {
+		
 	}
 	
 	public void setUpgrade(Upgrade upgrade) {
@@ -75,5 +79,9 @@ public class Projectile extends Parent{
 	
 	protected double getProjectileSpeed() {
 		return this.projectileSpeed;
+	}
+	
+	protected double getProjectileTravelLength() {
+		return this.projectileTravelLength;
 	}
 }
