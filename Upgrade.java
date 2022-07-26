@@ -1,7 +1,7 @@
 package gui;
 
 public enum Upgrade {
-	NONE ("None"), MEDIUM_SPEED ("Fast Shooting"), FAST_SPEED ("Lightning Bullets"), AUTO ("Full Auto"), SHOTGUN ("Shotgun");
+	NONE ("None"), MEDIUM_SPEED ("Fast Shooting"), FAST_SPEED ("Lightning Bullets"), AUTO ("Full Auto"), SHOTGUN ("Shotgun"), ENEMY ("Enemy)");
 	
 	private String upgradeDescription;
 	
